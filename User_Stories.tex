@@ -1,0 +1,458 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[backend=biber,
+style=numeric,
+sorting=none,
+isbn=false,
+doi=false,
+url=false,
+]{biblatex}\addbibresource{bibliography.bib}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\usepackage[paperheight=11.0in,paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,}
+
+\urlstyle{same}
+
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\renewlist{enumerate}{enumerate}{9}
+		\setlist[enumerate,1]{label=\arabic*)}
+		\setlist[enumerate,2]{label=\alph*)}
+		\setlist[enumerate,3]{label=(\roman*)}
+		\setlist[enumerate,4]{label=(\arabic*)}
+		\setlist[enumerate,5]{label=(\Alph*)}
+		\setlist[enumerate,6]{label=(\Roman*)}
+		\setlist[enumerate,7]{label=\arabic*}
+		\setlist[enumerate,8]{label=\alph*}
+		\setlist[enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+		\setlist[itemize]{label=$\cdot$}
+		\setlist[itemize,1]{label=\textbullet}
+		\setlist[itemize,2]{label=$\circ$}
+		\setlist[itemize,3]{label=$\ast$}
+		\setlist[itemize,4]{label=$\dagger$}
+		\setlist[itemize,5]{label=$\triangleright$}
+		\setlist[itemize,6]{label=$\bigstar$}
+		\setlist[itemize,7]{label=$\blacklozenge$}
+		\setlist[itemize,8]{label=$\prime$}
+
+\setlength{\topsep}{0pt}\setlength{\parskip}{8.04pt}
+\setlength{\parindent}{0pt}
+
+ %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+
+\renewcommand{\arraystretch}{1.3}
+
+
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+{\fontsize{13pt}{15.6pt}\selectfont \textbf{Problem 6 [70 marks]}\par}\par
+
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.67in}p{4.42in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.67in}}{Identifier} & 
+\multicolumn{1}{|p{4.42in}|}{EN\_01} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.67in}}{Statement} & 
+\multicolumn{1}{|p{4.42in}|}{As a user, I should be able to see the operators/operations on the display screen that I am entering so that I can modify the expression if needed.} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.67in}}{Constraint} & 
+\multicolumn{1}{|p{4.42in}|}{The display screen will show a total of 10 inputs of the expression at a time.} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.67in}}{Acceptance Criteria} & 
+\multicolumn{1}{|p{4.42in}|}{Given I want to get the sum of 2 $\&$ 3, I should be able to see the expression as 2+3, on the display screen before I click $``$=$"$  for the result.} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.67in}}{Priority} & 
+\multicolumn{1}{|p{4.42in}|}{Must have} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.67in}}{Estimate} & 
+\multicolumn{1}{|p{4.42in}|}{20 minutes} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.67in}p{4.42in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.67in}}{Identifier} & 
+\multicolumn{1}{|p{4.42in}|}{EN\_02} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.67in}}{Statement} & 
+\multicolumn{1}{|p{4.42in}|}{As a user, I should be able to delete wrongly entered operators/operations so that I can correct the expression I want to calculate.} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.67in}}{Constraint} & 
+\multicolumn{1}{|p{4.42in}|}{The user must have to enter atleast one operator/operation to delete it.} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.67in}}{Acceptance Criteria} & 
+\multicolumn{1}{|p{4.42in}|}{1. Given I have entered 1, 2, 3 (123). On pressing the backspace key, I should see 12 on the display screen. \par 2. Given I entered 5. On pressing the backspace key, I should see 0 on the display screen.} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.67in}}{Priority} & 
+\multicolumn{1}{|p{4.42in}|}{Must have} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.67in}}{Estimate} & 
+\multicolumn{1}{|p{4.42in}|}{15 minutes} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.67in}p{4.42in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.67in}}{Identifier} & 
+\multicolumn{1}{|p{4.42in}|}{EN\_03} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.67in}}{Statement} & 
+\multicolumn{1}{|p{4.42in}|}{As a user, I should be able to directly calculate the area of a circle by just providing the value of radius as this is the most needed calculation in my field of work and will save me a lot of time.} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.67in}}{Constraint} & 
+\multicolumn{1}{|p{4.42in}|}{The value of Radius should be greater than zero. (r >0)} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.67in}}{Acceptance Criteria} & 
+\multicolumn{1}{|p{4.42in}|}{1. Given I have clicked $``$Area$"$  key. I will now click 5 (radius) to get the result 78.5 ( 3.14 $\ast$  5 $\ast$  5 ) displayed on the screen \par 2. Given I have clicked $``$Area$"$  key. Now on giving the value of radius as -5 , the display screen will show $``$ERROR$"$ .} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.67in}}{Priority} & 
+\multicolumn{1}{|p{4.42in}|}{Must have} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.67in}}{Estimate} & 
+\multicolumn{1}{|p{4.42in}|}{30 minutes} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 4 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.67in}p{4.42in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.67in}}{Identifier} & 
+\multicolumn{1}{|p{4.42in}|}{EN\_04} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.67in}}{Statement} & 
+\multicolumn{1}{|p{4.42in}|}{As a user, I should be able to choose the value of $``$pi$"$  upto desired number of decimal points depending on my calculation, to get the precise result.} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.67in}}{Constraint} & 
+\multicolumn{1}{|p{4.42in}|}{} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.67in}}{Acceptance Criteria} & 
+\multicolumn{1}{|p{4.42in}|}{1. Given I have clicked $``$pi$"$  , on clicking $``$D$"$  key if I enter 2 , the pi in my calculation will have value upto 2 decimal places i.e. 3.14 , which will be enough for me to calculate the circumference of a circle.} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.67in}}{Priority} & 
+\multicolumn{1}{|p{4.42in}|}{Should have} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.67in}}{Estimate} & 
+\multicolumn{1}{|p{4.42in}|}{35 minutes} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 4 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 5 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.67in}p{4.42in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.67in}}{Identifier} & 
+\multicolumn{1}{|p{4.42in}|}{EN\_05} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.67in}}{Statement} & 
+\multicolumn{1}{|p{4.42in}|}{As a user, I should be able to save the results of my calculation so that I can use it later.} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.67in}}{Constraint} & 
+\multicolumn{1}{|p{4.42in}|}{There must be atleast one entered value or computation done, after starting the calculator.} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.67in}}{Acceptance Criteria} & 
+\multicolumn{1}{|p{4.42in}|}{1. Given I have calculated area of a circle with radius $``$5$"$  , if I click $``$S$"$  key, the result will be stored in calculator’s memory for later use. \par 2. Given that I have just turned on the calculator and the display screen shows $``$0$"$ , on clicking $``$S$"$  nothing is stored in the memory.} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.67in}}{Priority} & 
+\multicolumn{1}{|p{4.42in}|}{Should have} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.67in}}{Estimate} & 
+\multicolumn{1}{|p{4.42in}|}{25 minutes} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 5 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 6 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.67in}p{4.42in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.67in}}{Identifier} & 
+\multicolumn{1}{|p{4.42in}|}{EN\_06} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.67in}}{Statement} & 
+\multicolumn{1}{|p{4.42in}|}{As a user, I should be able to see all my saved calculations so that I can decide which one to use.} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.67in}}{Constraint} & 
+\multicolumn{1}{|p{4.42in}|}{The user must have to save at least one computation in the saving list.} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.67in}}{Acceptance Criteria} & 
+\multicolumn{1}{|p{4.42in}|}{1. Given I have saved 2+2=4 and then 4-3=1 by clicking $``$S$"$  key after each computation. On clicking $``$H$"$  key I should see 4, 1. \par 2. Given I have just started the calculator and no value is saved. On clicking $``$H$"$ , $``$No value$"$  will be displayed on the screen} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.67in}}{Priority} & 
+\multicolumn{1}{|p{4.42in}|}{Should have} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.67in}}{Estimate} & 
+\multicolumn{1}{|p{4.42in}|}{25 minutes} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 6 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 7 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.67in}p{4.42in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.67in}}{Identifier} & 
+\multicolumn{1}{|p{4.42in}|}{EN\_07} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.67in}}{Statement} & 
+\multicolumn{1}{|p{4.42in}|}{As a user, I should be able to operate on the last calculated answer directly.} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.67in}}{Constraint} & 
+\multicolumn{1}{|p{4.42in}|}{The user must have calculated one expression} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.67in}}{Acceptance Criteria} & 
+\multicolumn{1}{|p{4.42in}|}{1. Given I calculated 2+2=4, if I click $``$Ans$"$  key and then + 2 , the result displayed should be 6 (4 + 2) \par 2. Given I have not done any calculation, clicking $``$Ans$"$  will do nothing.} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.67in}}{Priority} & 
+\multicolumn{1}{|p{4.42in}|}{Should have} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.67in}}{Estimate} & 
+\multicolumn{1}{|p{4.42in}|}{30 minutes} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 7 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 8 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.67in}p{4.42in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.67in}}{Identifier} & 
+\multicolumn{1}{|p{4.42in}|}{EN\_08} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{1.67in}}{Statement} & 
+\multicolumn{1}{|p{4.42in}|}{As a user, I should be able to upload my calculations in icloud, so that I can access them from anywhere, anytime.} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{1.67in}}{Constraint} & 
+\multicolumn{1}{|p{4.42in}|}{The user should have an icloud account.} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{1.67in}}{Acceptance Criteria} & 
+\multicolumn{1}{|p{4.42in}|}{1. Given I have done a calculation, on clicking $``$iC$"$ , the result is permanently stored in my icloud account.} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{1.67in}}{Priority} & 
+\multicolumn{1}{|p{4.42in}|}{Could have} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{1.67in}}{Estimate} & 
+\multicolumn{1}{|p{4.42in}|}{45 minutes} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 8 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\printbibliography
+\end{document}
